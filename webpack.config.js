@@ -64,7 +64,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "index.[contenthash].html",
+      filename: "index.html",
       template: "./public/index.html",
       inject: "body",
     }),
