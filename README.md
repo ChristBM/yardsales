@@ -1,4 +1,4 @@
-# Yard Sale :convenience_store:
+# Yard Sales :convenience_store:
 Es un SPA en React.js de una mini tienda ficticia. El proyecto consta de diferentes vistas y páginas a las cuales se accede usando las rutas de React Router.
 
 Se emplea una API llamada FakeStore, que está disponible en internet y la inspiración del diseño provienen del curso de Frontend Developer y el curso Práctico de React en Platzi.
