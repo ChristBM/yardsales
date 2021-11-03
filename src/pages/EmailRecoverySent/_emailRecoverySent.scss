@@ -1,0 +1,30 @@
+@use '../../styles/variables' as *;
+
+.email_recov_pass {
+  width: 100%;
+  height: auto;
+
+  &__image_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    display: flex;
+    width: 132px;
+    height: 132px;
+    margin-bottom: 24px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: $text-input-field;
+  }
+
+  &__image-email {
+    width: 80px;
+  }
+
+}

@@ -1,0 +1,43 @@
+@use "../../styles/_variables.scss" as *;
+
+.header {
+  display: grid;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  grid-template-columns: auto 1fr auto;
+  place-items: center;
+  border-bottom: 1px solid $very-light-pink;
+  background-color: $white;
+  user-select: none;
+
+  &_logo_categ__container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  &__categories {
+    display: flex;
+    padding-inline-start: 20px;
+  }
+
+}
+
+@media (max-width: 690px) {
+
+  .header {
+
+    &__categories {
+      grid-template-columns: repeat( 2, 1fr );
+      display: none;
+    }
+    &_logo_categ__container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+}

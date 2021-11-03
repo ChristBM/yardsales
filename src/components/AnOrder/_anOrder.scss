@@ -1,0 +1,46 @@
+@use "../../styles/_variables.scss" as *;
+
+.an_order {
+
+  &__container {
+    display: flex;
+    width: 310px;
+    height: 105px;
+    padding-inline: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+
+  &__name_container {
+    display: flex;
+    width: 150px;
+    height: 100%;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__name {
+    @include font-style( $main-font, 300, $sm, 0px, $black );
+  }
+
+  &__price {
+    @include font-style( $main-font, 700, $sm, 0px, $black );
+  }
+
+  &__icon_price_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+}

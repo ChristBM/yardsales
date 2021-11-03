@@ -1,0 +1,40 @@
+@use "../../styles/variables" as *;
+
+.not_found {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__link {
+    text-decoration: none;
+    @include font-style( $main-font, 500, $lg, 1px, $hospital-red );
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+
+}
+
+@media (min-width:690px) {
+
+  .not_found{
+
+    &__img {
+      width: 500px;
+      height: auto;
+      object-fit: contain;
+    }
+
+  }
+
+}

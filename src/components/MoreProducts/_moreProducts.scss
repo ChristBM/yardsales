@@ -1,0 +1,12 @@
+@use '../../styles/variables' as *;
+
+.more_products {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  margin-block-start: 50px;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: $hospital-green;
+}

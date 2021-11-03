@@ -1,0 +1,38 @@
+@use "../../styles/_variables.scss" as *;
+
+.search_product {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    width: 310px;
+    height: 40px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: $text-input-field;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 10px;
+  }
+
+  &__input {
+    width: 260px;
+    height: 30px;
+    outline: none;
+    border-style: none;
+    background: none;
+    @include font-style( $main-font, 500, $md, 0px, $black );
+  }
+
+  &__input::placeholder {
+    @include font-style( $main-font, 400, $md, 0px, $very-light-pink );
+  }
+
+}

@@ -1,0 +1,54 @@
+@use "../../styles/_variables.scss" as *;
+
+.categories {
+
+  &__container {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    width: auto;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+  }
+
+  &__list_link {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid $white;
+    cursor: pointer;
+    @include font-style( $main-font, 500, $sm, 1px, $very-light-pink );
+  }
+
+  &__list_link:hover {
+    border: 1px solid $hospital-green;
+  }
+
+}
+
+.background_category {
+  background-color: $hospital-green;
+  color: $white;
+}
+
+@media (max-width: 430px) {
+
+  .categories {
+
+    &__list {
+      display: flex;
+      width: 100%;
+      height: 80px;
+      margin-block: 0px;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+
+}

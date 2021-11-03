@@ -1,0 +1,21 @@
+@use "./_variables.scss" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: $main-font, sans-serif;
+  position: relative;
+}
+
+.not-visible {
+  display: none;
+}

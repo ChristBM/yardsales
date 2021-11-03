@@ -1,0 +1,58 @@
+@use '../../styles/variables' as *;
+
+.go_up_arrow {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 80px;
+  right: 5px;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $hospital-green;
+  border-radius: 50%;
+  background-color: $white;
+  opacity: 0.8;
+  cursor: pointer;
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    transform: rotate(270deg);
+  }
+
+  &__icon:hover{
+    animation: up 1s linear infinite;
+  }
+
+}
+
+.go_up_arrow:hover {
+  opacity: 1;
+  border-color: $hospital-green;
+  border-width: 2px;
+}
+
+@keyframes up {
+  0%{
+    transform: translateY(0px) rotate(270deg);
+  }
+  20%{
+    transform: translateY(2px) rotate(270deg);
+  }
+  40%{
+    transform: translateY(4px) rotate(270deg);
+  }
+  60%{
+    transform: translateY(-4px) rotate(270deg);
+  }
+  80%{
+    transform: translateY(-2px) rotate(270deg);
+  }
+  100%{
+    transform: translateY(0px) rotate(270deg);
+  }
+}

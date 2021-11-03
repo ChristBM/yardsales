@@ -1,0 +1,24 @@
+.icon_close {
+
+  &__container{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-style: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__container-no_positioned {
+    border-style: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+}

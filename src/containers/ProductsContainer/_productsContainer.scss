@@ -1,0 +1,15 @@
+.main__cards_container {
+  display: grid;
+  min-height: 100vh;
+  margin-block-start: 20px;
+  padding-inline: 20px;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 30px;
+  place-content: center;
+}
+
+@media (max-width: 640px) {
+  .main__cards_container {
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+}

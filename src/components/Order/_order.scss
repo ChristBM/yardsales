@@ -1,0 +1,103 @@
+@use "../../styles/_variables.scss" as *;
+
+.order {
+  display: flex;
+  width: 105px;
+  height: 20px;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  user-select: none;
+
+  &__text {
+    @include font-style( $main-font, 500, $lg, 0px, $black );
+  }
+
+  &__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+
+  &__text_filter {
+    width: auto;
+    @include font-style( $main-font, 400, $md, 0px, $very-light-pink );
+  }
+
+  &__btn {
+    display: flex;
+    width: auto;
+    padding: 0;
+
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border-style: none;
+  }
+
+  &__btn_icon {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    transform: rotate(90deg);
+  }
+
+  &__menu {
+    display: flex;
+    width: 105px;
+    height: auto;
+    padding: 10px 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background-color: $text-input-field;
+
+  }
+
+  &__menu_label {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    @include font-style( $main-font, 500, $sm, 1px, $black );
+  }
+
+  &__menu_input {
+    height: 15px;
+    width: 15px;
+    appearance: none;
+    border-radius: 50%;
+    background: #f0f0f0;
+    border:2px solid $very-light-pink;
+  }
+
+  &__menu_input:checked {
+    background: $hospital-green;
+  }
+
+}
+
+.rotate_90deg {
+  transform: rotate(90deg);
+}
+
+.rotate_270deg {
+  transform: rotate(270deg);
+}
+
+.opacity_min {
+  opacity: 0;
+}
+
+.opacity_max {
+  opacity: 1;
+}

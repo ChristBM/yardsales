@@ -1,0 +1,94 @@
+@use "../../styles/_variables.scss" as *;
+
+.shop_car {
+
+  &__menu {
+    display: flex;
+    color: $very-light-pink;
+    font-size: $sm;
+    margin-right: 12px;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+
+  &__list_link, &__list_user {
+    text-decoration: none;
+    color: $very-light-pink;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  &__list_user {
+    display: none;
+  }
+
+  &__list_link:hover {
+    text-decoration: underline;
+    color: $hospital-green;
+    cursor: pointer;
+  }
+
+  &__icon {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__icon_counter {
+    width: 16px;
+    height: 16px;
+    background-color: $hospital-green;
+    border-radius: 50%;
+    font-size: $sm;
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn_icon {
+    width: 15px;
+    height: 15px;
+    margin-inline-start: 10px;
+    cursor: pointer;
+  }
+
+}
+
+.rotate_90deg {
+  transform: rotate(90deg);
+}
+.rotate_270deg {
+  transform: rotate(270deg);
+}
+
+
+@media (max-width: 690px) {
+
+  .shop_car__menu {
+    display: none;
+  }
+
+}
+@media (min-width: 840px) {
+
+  .shop_car__list_user {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+  }
+
+}
+

@@ -1,0 +1,10 @@
+@forward './functions';
+
+@mixin font-style( $family, $weight, $f-size, $letterSpacing, $f-color ) {
+  font-family: $family;
+  font-weight: $weight;
+  line-height: calc-line-Height($f-size);
+  font-size: $f-size;
+  letter-spacing: $letterSpacing;
+  color: $f-color;
+}

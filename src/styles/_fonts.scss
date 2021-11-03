@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+        url('./assets/fonts/quicksand-v24-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/quicksand-v24-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+        url('./assets/fonts/quicksand-v24-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+        url('./assets/fonts/quicksand-v24-latin-700.woff2') format('woff2');
+}
+
+$main-font: 'Quicksand';

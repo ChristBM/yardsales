@@ -1,0 +1,23 @@
+.menu_icon {
+
+  &__btn {
+    border-style: none;
+    background: none;
+  }
+
+  &__img {
+    display: none;
+  }
+}
+
+@media (max-width: 690px) {
+
+  .menu_icon  {
+
+    &__img {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+}

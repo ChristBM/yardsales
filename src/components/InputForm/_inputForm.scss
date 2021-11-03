@@ -1,0 +1,45 @@
+@use "../../styles/_variables.scss" as *;
+
+.input_form {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__label {
+    width: auto;
+    height: 20px;
+    @include font-style( $main-font, 700, $sm, 1px, $black );
+  }
+
+  &__input {
+    width: 300px;
+    height: 30px;
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: $text-input-field;
+    @include font-style( $main-font, 400, $md, 0px, $black );
+  }
+
+  &__input:invalid {
+    background-color: #ffdddd;
+  }
+
+  &__input:valid {
+    background-color: #ddffdd;
+  }
+
+  &__input:required {
+    border-color: #800000;
+    border-width: 2px;
+  }
+
+  &__input:required:invalid {
+    border-color: #C00000;
+  }
+
+}

@@ -1,0 +1,12 @@
+.login {
+  width: 100%;
+  height: auto;
+
+  &__btn_singup {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    justify-content: center;
+  }
+}

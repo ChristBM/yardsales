@@ -1,0 +1,76 @@
+@use "../../styles/_variables.scss" as *;
+
+.menu_mobile {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $white;
+  user-select: none;
+
+  &__list {
+    width: 100%;
+    list-style: none;
+  }
+
+  &__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $text-input-field;
+  }
+
+  &__link {
+    padding: 5px;
+    text-decoration: none;
+    @include font-style( $main-font, 700, $lg, 1px, $black );
+  }
+
+  &__list_element {
+    width: 100%;
+    padding-block: 15px;
+  }
+
+  &__separator {
+    width: 100%;
+    height: 1px;
+    border-block-end: 1px solid $very-light-pink ;
+  }
+
+}
+
+.email {
+  font-size: $md;
+  font-weight: 400;
+}
+
+.sign-out {
+  color: $hospital-red;
+}
+
+.sign-out:hover, .log-in:hover, .sign-up:hover {
+  border: 1px solid $very-light-pink;
+  border-radius: 5px;
+}
+
+.log-in {
+  color: $hospital-green;
+}
+
+.sign-up {
+  color: rgb(134, 134, 250);
+}
+
+.email_color {
+  color: $hospital-green;
+}
+
+.link-menu:hover {
+  text-decoration: underline;
+}

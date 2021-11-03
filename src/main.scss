@@ -1,0 +1,40 @@
+@use "./styles/globals";
+
+/* Components */
+@use "./components/AnOrder/anOrder";
+@use "./components/Categories/categories";
+@use "./components/IconClose/iconClose";
+@use "./components/InputForm/inputForm";
+@use "./components/Logo/logo";
+@use "./components/MainButton/mainButton";
+@use "./components/MenuIcon/menuIcon";
+@use "./components/Order/order";
+@use "./components/ProductCard/productCard";
+@use "./components/SearchProduct/searchProduct";
+@use "./components/ShopCart/shopCart";
+@use "./components/ElementOrder/elementOrder";
+@use "./components/MoreProducts/moreProducts";
+@use "./components/GoUpArrow/goUpArrow";
+
+/* Containers */
+@use "./containers/MainForm/mainForm";
+
+@use "./containers/MyOrders/myOrders";
+@use "./containers/MyAccount/myAccount";
+@use "./containers/EditAccount/editAccount";
+@use "./containers/ProductDetails/productDetails";
+@use "./containers/ProductsContainer/productsContainer";
+@use "./containers/Search/search";
+
+@use "./containers/Header/header";
+@use "./containers/MenuDesktop/menuDesktop";
+@use "./containers/MenuMobile/menuMobile";
+@use "./containers/ShoppingCart/shoppingCart";
+
+/* Pages */
+@use "./pages/CreateAccount/createAccount";
+@use "./pages/Login/login";
+@use "./pages/EmailRecovery/emailRecovery";
+@use "./pages/EmailRecoverySent/emailRecoverySent";
+@use "./pages/RecoveryPassword/recoveryPassword";
+@use "./pages/NotFound/notFound"

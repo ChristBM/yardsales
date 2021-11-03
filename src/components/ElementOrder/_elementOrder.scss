@@ -1,0 +1,67 @@
+@use '../../styles/variables' as *;
+
+.element_order {
+  display: flex;
+  width: 320px;
+  height: auto;
+  padding-inline: 20px;
+  padding-block: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid $hospital-green;
+  border-radius: 20px;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    width: 50%;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  &__date {
+    @include font-style( $main-font, 500, $md, 1px, $black );
+  }
+
+  &__articles {
+    @include font-style( $main-font, 300, $md, 0px, $black );
+  }
+
+  &__right {
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__amount {
+    @include font-style( $main-font, 700, $md, 0px, $black );
+  }
+
+  &__icon {
+    width: auto;
+    height: 15px;
+    object-fit: contain;
+  }
+
+}
+
+.rotate_90deg {
+  transform: rotate(90deg);
+}
+
+.rotate_270deg {
+  transform: rotate(270deg);
+}

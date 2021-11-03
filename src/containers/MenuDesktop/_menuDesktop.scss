@@ -1,0 +1,49 @@
+@use "../../styles/_variables.scss" as *;
+
+.menu_desktop {
+  display: flex;
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  top: 61px;
+  right: 60px;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: $text-input-field;
+
+  &__list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $text-input-field;
+  }
+
+  &__link {
+    padding: 5px;
+    text-decoration: none;
+    @include font-style( $main-font, 500, $md, 0px, $black );
+  }
+
+  &__list_element {
+    padding-block: 15px;
+  }
+
+  &__separator {
+    width: 100%;
+    height: 1px;
+    border-block-end: 1px solid $very-light-pink ;
+  }
+
+}

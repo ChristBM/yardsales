@@ -1,0 +1,59 @@
+@use "../../styles/_variables.scss" as *;
+
+.my_account {
+
+  &__container {
+    display: flex;
+    width: 100%;
+    padding-block-start: 50px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__title {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+  }
+
+  &__title_text {
+    text-align: start;
+    @include font-style( $main-font, 700, $lg, 1px, $black );
+  }
+
+  &__list {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    list-style: none;
+  }
+
+  &__list_elem {
+    display: flex;
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__elem_title {
+    @include font-style( $main-font, 700, $md, 0px, $black );
+  }
+
+  &__elem_data {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: $hospital-green;
+    @include font-style( $main-font, 400, $md, 1px, $black );
+  }
+
+}
