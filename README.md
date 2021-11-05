@@ -1,19 +1,19 @@
 # Yard Sales :convenience_store:
-Es un SPA en React.js de una mini tienda ficticia. El proyecto consta de diferentes vistas y páginas a las cuales se accede usando las rutas de React Router.
+It is a React.js SPA of a fictitious mini store. The project consists of different views and pages which are accessed using React Router routes.
 
-Se emplea una API llamada FakeStore, que está disponible en internet y la inspiración del diseño provienen del curso de Frontend Developer y el curso Práctico de React en Platzi.
+It uses an API called FakeStore, which is available on the internet and the design inspiration comes from the Frontend Developer course and the React Practical course at Platzi.
 
-El código del proyecto es propio y en la maquetación, aunque sigue la misma estética y usa algunos de los recursos del diseño original, no es la misma y tiene un toque personal.
+The code of the project is our own and in the layout, although it follows the same aesthetics and uses some of the resources of the original design, it is not the same and has a personal touch.
 
-La aplicación funciona del lado del cliente en su mayor parte, aprovechando el almacenamiento en localStorage y en sessionStorage del navegador, para que la app siga un flujo bastante parecido al que tendría una tienda real con su backend.
+The application works client-side for the most part, taking advantage of the storage in localStorage and sessionStorage of the browser, so that the app follows a flow quite similar to that of a real store with its backend.
 
-## Ver proyecto :rocket:
+## View project :rocket:
 [Deploy](https://christbm.github.io/yardsales/)
 
-## Recursos y Enlaces :fountain:
-[Tipografía Principal](http://google-webfonts-helper.herokuapp.com/fonts/quicksand?subsets=latin "Quicksand")
+## Resources and Links :fountain:
+[Main Typography](http://google-webfonts-helper.herokuapp.com/fonts/quicksand?subsets=latin "Quicksand")
 
-[Layout de inspiración](https://github.com/platzi/curso-frontend-developer-practico)
+[Inspirational Layout](https://github.com/platzi/curso-frontend-developer-practico)
 
 [Figma Mobile Design](https://www.figma.com/proto/bcEVujIzJj5PNIWwF9pP2w/Platzi_YardSale?node-id=0%3A719&amp%3Bscaling=scale-down&amp%3Bpage-id=0%3A1&amp%3Bstarting-point-node-id=0%3A719)
 
@@ -23,26 +23,26 @@ La aplicación funciona del lado del cliente en su mayor parte, aprovechando el 
 
 [Error 404](https://lottiefiles.com/)
 
-## Contribuyedo :raising_hand:
-El proyecto está abierto a cambios o sugerencias. Se aceptan todo tipo de críticas constructivas.
+## Contributing :raising_hand:
+The project is open to changes or suggestions. Constructive criticism of any kind is welcome.
 
-## Instalación :electric_plug:
-Clonar yardsales:
+## Installation :electric_plug:
+Clone yardsales:
 ```
 git clone https://github.com/ChristBM/yardsales.git
  ```
 
-Instalar dependencias:
+Install dependencies:
 ```
 npm install
 ```
 
-Deploy local de yardsales:
+Local yardsales deploy:
 ```
 npm run start
 ```
 
-## Licencia :unlock:
+## License :unlock:
 
 Copyright © 2021 [Christian Boffill](https://github.com/ChristBM)
 
